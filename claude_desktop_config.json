@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "yt-dlp": {
+      "command": "node",
+      "args": ["C:\\Users\\Admin\\Downloads\\yt-dlp-mcp-server\\index.js"],
+      "env": {
+        "YT_DLP_PATH": "C:\\Users\\Admin\\Downloads\\yt-dlp.exe",
+        "DOWNLOAD_DIR": "C:\\Users\\Admin\\Downloads"
+      }
+    }
+  }
+}

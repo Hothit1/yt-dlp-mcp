@@ -1,0 +1,21 @@
+{
+  "name": "yt-dlp-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for yt-dlp YouTube downloader",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --inspect index.js"
+  },
+  "keywords": ["mcp", "youtube", "download", "yt-dlp"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "zod": "^3.22.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

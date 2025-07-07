@@ -22,10 +22,16 @@ if %errorlevel% neq 0 (
 )
 
 :: Check if yt-dlp.exe exists
-if not exist "C:\Users\Admin\Downloads\yt-dlp.exe" (
-    echo WARNING: yt-dlp.exe not found at C:\Users\Admin\Downloads\yt-dlp.exe
-    echo Please make sure yt-dlp.exe is in the correct location
+if not exist "yt-dlp.exe" (
+    echo WARNING: yt-dlp.exe not found in the current directory
+    echo Please make sure yt-dlp.exe is in the same directory as this script
     echo.
+)
+
+:: Create downloads directory if it doesn't exist
+if not exist "downloads" (
+    echo Creating downloads directory...
+    mkdir downloads
 )
 
 echo.
@@ -38,5 +44,6 @@ echo 3. Restart Claude Desktop
 echo.
 echo To test the server directly:
 echo   npm start
+echo   or run start.bat
 echo.
 pause
